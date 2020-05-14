@@ -1,25 +1,33 @@
-# Default Template for SDG .NET Course
+# Rock, Paper, Scissors
 
-This is the default template for a simple .NET Core console app. This template has:
+## Explorer Mode
 
-- github integration
+As a user, I should see a welcome message.
 
-## To push to github
+As a user, I should see the options I can pick (i.e., "rock", "paper", "scissor")
 
-To create and push your current code to github, use the task `create-github`.
+The computer should randomly decide one of the options.
 
-How?
+You program should then decide who the winner is;
 
-1. Open your command pallette by using (Mac) `shift + cmd + p` or (Windows) `shift + ctrl + p`
-2. Search and Select `Tasks: Run Task`
-3. Select `create-github` from the dropdown
+The user should then see the randomly selected option, as well as a win or lose message.
 
-This will create a new github repo, locally and up on github and also push your current code.
+add some validation around user input.
 
-## To turn in your assignment:
+## Adventure Mode
 
-after you have created a github repo, completed your project and pushed your code, follow these instructions: https://suncoast.io/handbook/tools/assignment-turn-in/
+Create a way for the user to choose a level of difficulty, normal, impossible, or easy.
 
-## PROTIP:
+normal should run the game as in explorer mode above
 
-When you are complete with the project and have turned it in to your instructor, update this read me with details about the assignment.
+impossible mode always chooses the winning option (if the user picked paper, the computer always select scissor)
+
+easy mode always chooses the losing option (if the user picked paper, then the computer always select rock)
+
+Allow the user to play again. hint: while loops
+
+## Epic Mode
+
+You have about rock, paper, scissors, but have you tried, rock paper scissors lizard spock. Modify your game to allow the extra options
+
+Your game is currently only 1 vs. 1, add the ability to add more computer or users players to the game
